@@ -5,7 +5,7 @@ and tells you which well-known drugs it structurally resembles most, using
 Tanimoto similarity on Morgan fingerprints (RDKit).
 
 Built as a fun summer side project to play around with cheminformatics before
-starting an MSc — not a rigorous screening tool, just a way to explore how
+starting an MSc - not a rigorous screening tool, just a way to explore how
 structural similarity search works.
 
 ## Example
@@ -13,7 +13,7 @@ structural similarity search works.
 ```
 Paste a SMILES string: CC(=O)Nc1ccc(O)cc1
 
-🔬 Your molecule — MW: 151.2, LogP: 1.35
+🔬 Your molecule - MW: 151.2, LogP: 1.35
 
 Top 5 closest known drugs:
 
@@ -70,11 +70,11 @@ streamlit run app.py
 | Paracetamol | `CC(=O)Nc1ccc(O)cc1` |
 
 Or find SMILES for any other drug on [PubChem](https://pubchem.ncbi.nlm.nih.gov/)
-— search a drug name and copy the "Canonical SMILES" field.
+- search a drug name and copy the "Canonical SMILES" field.
 
 ## Notes
 
-- Similarity scores are based purely on 2D structural fingerprints — they
+- Similarity scores are based purely on 2D structural fingerprints - they
   don't account for 3D shape, binding affinity, or actual pharmacological
   effect. A high score means "structurally similar," not "does the same thing."
 - The drug reference library is small and hand-picked for fun/recognisability,
@@ -82,5 +82,5 @@ Or find SMILES for any other drug on [PubChem](https://pubchem.ncbi.nlm.nih.gov/
 
 ## Built with
 
-- [RDKit](https://www.rdkit.org/) — cheminformatics toolkit
-- [Streamlit](https://streamlit.io/) — web app framework (optional UI layer)
+- [RDKit](https://www.rdkit.org/) - cheminformatics toolkit
+- [Streamlit](https://streamlit.io/) - web app framework (optional UI layer)
